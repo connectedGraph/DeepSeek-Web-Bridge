@@ -1,10 +1,10 @@
-# DeepSeek Unofficial API Proxy
+# DeepSeek Web Bridge
 
 [中文](#中文) | [English](#english)
 
 ## 中文
 
-一个基于浏览器自动化的本地 DeepSeek 非官方 API 代理。
+一个基于浏览器自动化的本地 DeepSeek Web API 桥接服务。它连接 DeepSeek 官方 Web 站点，并在本机提供 HTTP API；它不是 DeepSeek 官方 API，也不声称是第三方非官方 API 实现。
 支持最新的**专家模式(expert_mode)**。
 可用于批量请求测试deepseek灰测的V4能力(bushi)
 
@@ -416,8 +416,8 @@ curl -X POST http://127.0.0.1:8000/chat \
 
 ## 免责声明
 
-- 本项目与 DeepSeek 官方无关
-- 这是网页自动化方案，不是官方 API
+- 本项目不是 DeepSeek 官方 API，也不代表 DeepSeek
+- 本项目是连接 DeepSeek 官方 Web 站点的本地浏览器自动化桥接层，不是独立的“非官方 API”实现
 - 页面结构变化后可能需要更新逻辑
 - 请确保你的使用符合目标网站条款和当地法律法规
 
@@ -425,7 +425,7 @@ curl -X POST http://127.0.0.1:8000/chat \
 
 ## English
 
-A local unofficial DeepSeek API proxy based on browser automation.
+A local DeepSeek Web API bridge based on browser automation. It connects to DeepSeek's official Web site and exposes a local HTTP API. It is not the official DeepSeek API, nor does it claim to be an independent unofficial API implementation.
 
 The project currently has a single main entry point:
 
@@ -832,7 +832,7 @@ The project also reads the files under `tokenizer/deepseek_v3_tokenizer` to esti
 
 ## Disclaimer
 
-- This project is not affiliated with DeepSeek
-- This is browser automation, not an official API
+- This project is not affiliated with or endorsed by DeepSeek
+- This is a local browser-automation bridge to the official DeepSeek Web site, not the official DeepSeek API
 - Frontend changes may require updates
 - Make sure your usage complies with the website terms and local laws

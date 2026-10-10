@@ -672,7 +672,7 @@ class DeepSeekProxyClient:
                 continue
 
 
-app = FastAPI(title="DeepSeek Unofficial API Proxy")
+app = FastAPI(title="DeepSeek Web Bridge")
 app.state.client_pool = []
 app.state.pool_lock = asyncio.Lock()
 app.state.token_index = 0
